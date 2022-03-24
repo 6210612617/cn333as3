@@ -62,6 +62,7 @@ fun GussingNumber() {
     fun checkAnswer() {
         var ans = if (answer.value.isEmpty()){0} else {answer.value.toInt()}
         var dif = ans - realAns
+        textBotton.value = "Submit"
         textAns.value = ""
         if (ans == realAns){
             textHint.value = "You Win"
@@ -162,13 +163,6 @@ fun GussingNumber() {
             count.value=0
             textHint.value=""
             var realAns = Random.nextInt(1,1000)})
-
-
-
-
-
-
-
 
     }
 }
