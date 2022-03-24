@@ -62,14 +62,19 @@ fun GussingNumber() {
     fun checkAnswer() {
         var ans = if (answer.value.isEmpty()){0} else {answer.value.toInt()}
         var dif = ans - realAns
+        if(textBotton.value == "Try Again"){
+            count.value = 0
+        }
         textBotton.value = "Submit"
         textAns.value = ""
+
         if (ans == realAns){
             textHint.value = "You Win"
             textAns.value = "Answer is "+ realAns
             textBotton.value = "Try Again"
             realAns = Random.nextInt(1,1000)
-            count.value +=1
+
+
 
         }
         else if((abs(dif) == 1) or (abs(dif) == 2) ){
