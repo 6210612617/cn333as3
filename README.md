@@ -12,4 +12,4 @@
 - [x] สามารถกดปุ่ม reset ระหว่างเล่นเกมได้ 
 
 
-## DEMO : https://youtu.be/-DajqMa5MTQ
+## DEMO : https://youtu.be/C0hTnr22u-k
