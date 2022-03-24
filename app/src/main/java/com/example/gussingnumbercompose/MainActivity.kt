@@ -62,6 +62,7 @@ fun GussingNumber() {
     fun checkAnswer() {
         var ans = if (answer.value.isEmpty()){0} else {answer.value.toInt()}
         var dif = ans - realAns
+        textAns.value = ""
         if (ans == realAns){
             textHint.value = "You Win"
             textAns.value = "Answer is "+ realAns
@@ -141,6 +142,7 @@ fun GussingNumber() {
                 textAlign = TextAlign.Center,
                 text = textBotton.value,
 
+
             )
         }
 
@@ -156,7 +158,7 @@ fun GussingNumber() {
         )
 
         ResetButton(word = "Restart", onClick = {
-
+            textAns.value = ""
             count.value=0
             textHint.value=""
             var realAns = Random.nextInt(1,1000)})
